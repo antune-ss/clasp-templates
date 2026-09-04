@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "types": "clasp-types --client -s ./src -o ../frontend/src/types/backend.d.ts",
+    "deploy": "pnpm run types && pnpm run build && clasp push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@antunes_s/clasp-types": "^2.0.0",
+    "@types/google-apps-script": "^2.0.12",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vite-plugin-gas": "^0.5.2"
+  }
+}

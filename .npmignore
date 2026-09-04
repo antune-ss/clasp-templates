@@ -1,0 +1,9 @@
+src/
+tsconfig.json
+
+node_modules/
+.env*
+
+test/
+tests/
+.github/
