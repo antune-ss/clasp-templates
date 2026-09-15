@@ -19,7 +19,6 @@
         "dev": "tsc -w"
     },
     "devDependencies": {
-        "@antunes_s/clasp-types": "^2.0.0",
         "@types/fs-extra": "^11.0.4",
         "@types/node": "^22.0.0",
         "rimraf": "^6.1.3",
