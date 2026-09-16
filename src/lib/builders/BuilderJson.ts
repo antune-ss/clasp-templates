@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-export abstract class Builder<T> {
+export abstract class BuilderJson<T> {
   protected abstract config: T;
   protected abstract fileName: string;
 

@@ -1,7 +1,7 @@
 import { ClaspJson } from "../schemas/ClaspJson.js";
-import { Builder } from "./Builder.js";
+import { BuilderJson } from "./BuilderJson.js";
 
-export class ClaspBuilder extends Builder<ClaspJson> {
+export class ClaspBuilder extends BuilderJson<ClaspJson> {
 
   protected fileName = '.clasp.json';
   protected config: ClaspJson;

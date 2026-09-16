@@ -1,7 +1,7 @@
 import { AppsscriptJson, Library, Service, Access, ExecuteAs } from "../schemas/AppsscriptJson.js";
-import { Builder } from "./Builder.js";
+import { BuilderJson } from "./BuilderJson.js";
 
-export class AppsscriptBuilder extends Builder<AppsscriptJson> {
+export class AppsscriptBuilder extends BuilderJson<AppsscriptJson> {
   
   protected fileName = 'appsscript.json';
   

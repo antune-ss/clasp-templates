@@ -2,6 +2,7 @@
 
 import { AppsscriptBuilder } from "./lib/builders/AppsscriptBuilder.js";
 import { ClaspBuilder } from "./lib/builders/ClaspBuilder.js";
+import { AgentsBuilder } from "./lib/builders/AgentsBuilder.js";
 import { input, confirm, select } from "@inquirer/prompts";
 import chalk from "chalk";
 import fs from 'fs-extra';
@@ -133,6 +134,10 @@ try {
       .enableWebApp()
       .build(targetDir);
   }
+
+  const agentsBuilder = new AgentsBuilder(projectType);
+  const agentsText = agentsBuilder.build().getText();
+  fs.writeFileSync(path.join(targetDir, 'AGENTS.md'), agentsText);
 
   console.log(chalk.green.bold('\nWorkspace successfully created!'));
   console.log(`\nNext steps:`);
