@@ -23,9 +23,9 @@ Pare de perder tempo configurando ferramentas de build, tipagens e ambientes par
 Você pode criar um novo projeto diretamente, sem precisar instalar pacotes globais, utilizando `npx` ou `pnpm dlx`:
 
 ```bash
-npx @antunes_s/clasp-templates
+npx @antunes_s/clasp-templates@latest
 # ou
-pnpm dlx @antunes_s/clasp-templates
+pnpm dlx @antunes_s/clasp-templates@latest
 ```
 
 Siga as instruções na tela para dar nome ao seu projeto, escolher o template e informar o seu Script ID do Google Apps Script.

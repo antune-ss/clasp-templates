@@ -19,9 +19,9 @@ Stop wasting time configuring build tools, typings, and environments for Google 
 You can create a new project directly without installing anything globally by using `npx` or `pnpm dlx`:
 
 ```bash
-npx @antunes_s/clasp-templates
+npx @antunes_s/clasp-templates@latest
 # or
-pnpm dlx @antunes_s/clasp-templates
+pnpm dlx @antunes_s/clasp-templates@latest
 ```
 
 Follow the interactive prompts to name your project, choose your template, and set up your Apps Script ID.
