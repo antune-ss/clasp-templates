@@ -1,6 +1,6 @@
 {
   "name": "@antunes_s/clasp-templates",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "description": "CLI to quickly scaffold modern Google Apps Script workspaces (Vite, React, TypeScript)",
   "homepage": "https://github.com/antune-ss/clasp-templates#readme",
