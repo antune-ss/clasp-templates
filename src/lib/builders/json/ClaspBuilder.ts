@@ -1,5 +1,5 @@
-import { ClaspJson } from "../schemas/ClaspJson.js";
-import { BuilderJson } from "./BuilderJson.js";
+import { ClaspJson } from "@/lib/schemas/ClaspJson.js";
+import { BuilderJson } from "@/lib/builders/json/BuilderJson.js";
 
 export class ClaspBuilder extends BuilderJson<ClaspJson> {
 

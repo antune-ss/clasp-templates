@@ -1,4 +1,4 @@
-import { BuilderTxt } from "./BuilderTxt.js";
+import { BuilderTxt } from "@/lib/builders/txt/BuilderTxt.js";
 
 export class AgentsBuilder extends BuilderTxt {
   private projectType: string;

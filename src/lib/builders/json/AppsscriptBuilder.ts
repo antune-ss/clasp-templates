@@ -1,5 +1,5 @@
-import { AppsscriptJson, Library, Service, Access, ExecuteAs } from "../schemas/AppsscriptJson.js";
-import { BuilderJson } from "./BuilderJson.js";
+import { AppsscriptJson, Library, Service, Access, ExecuteAs } from "@/lib/schemas/AppsscriptJson.js";
+import { BuilderJson } from "@/lib/builders/json/BuilderJson.js";
 
 export class AppsscriptBuilder extends BuilderJson<AppsscriptJson> {
   

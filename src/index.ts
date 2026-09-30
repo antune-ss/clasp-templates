@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import { AppsscriptBuilder } from "./lib/builders/AppsscriptBuilder.js";
-import { ClaspBuilder } from "./lib/builders/ClaspBuilder.js";
-import { AgentsBuilder } from "./lib/builders/AgentsBuilder.js";
+import { AppsscriptBuilder } from "@/lib/builders/json/AppsscriptBuilder.js";
+import { ClaspBuilder } from "@/lib/builders/json/ClaspBuilder.js";
+import { AgentsBuilder } from "@/lib/builders/txt/AgentsBuilder.js";
+import { ReadmeBuilder } from "@/lib/builders/txt/ReadmeBuilder.js";
 import { input, confirm, select } from "@inquirer/prompts";
 import chalk from "chalk";
 import fs from 'fs-extra';
@@ -138,6 +139,10 @@ try {
   const agentsBuilder = new AgentsBuilder(projectType);
   const agentsText = agentsBuilder.build().getText();
   fs.writeFileSync(path.join(targetDir, 'AGENTS.md'), agentsText);
+
+  const readmeBuilder = new ReadmeBuilder(projectName, projectType);
+  const readmeText = readmeBuilder.build().getText();
+  fs.writeFileSync(path.join(targetDir, "README.md"), readmeText);
 
   console.log(chalk.green.bold('\nWorkspace successfully created!'));
   console.log(`\nNext steps:`);
